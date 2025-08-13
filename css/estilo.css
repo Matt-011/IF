@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-
-.quavermelho {
+.cirvermelho {
     width: 80px;
     height: 80px;
     background-color: #cc0000;
@@ -23,13 +22,12 @@
     background-color: white;
 }
 
-.container-logo {
+.logoif {
     max-width: 350px;
     min-width: none;
 }
 
-/* Animações */
-@keyframes from-left {
+@keyframes da-esquerda {
     0% {
         transform: translateX(-100vw);
         opacity: 0;
@@ -40,7 +38,7 @@
     }
 }
 
-@keyframes from-right {
+@keyframes da-direita {
     0% {
         transform: translateX(100vw);
         opacity: 0;
@@ -51,7 +49,7 @@
     }
 }
 
-@keyframes from-top {
+@keyframes do-topo {
     0% {
         transform: translateY(-100vh);
         opacity: 0;
@@ -62,7 +60,7 @@
     }
 }
 
-@keyframes from-bottom {
+@keyframes de-baixo {
     0% {
         transform: translateY(100vh);
         opacity: 0;
@@ -73,98 +71,21 @@
     }
 }
 
-/* Aplicar animações com duração e delay */
-.animate-from-left {
-    animation: from-left 1s ease-out forwards;
+.animate-da-esquerda {
+    animation: da-esquerda 1s ease-out forwards;
 }
 
-.animate-from-right {
-    animation: from-right 1s ease-out forwards;
+.animate-da-direita {
+    animation: da-direita 1s ease-out forwards;
 }
 
-.animate-from-top {
-    animation: from-top 1s ease-out forwards;
+.animate-do-topo {
+    animation: do-topo 1s ease-out forwards;
 }
 
-.animate-from-bottom {
-    animation: from-bottom 1s ease-out forwards;
+.animate-de-baixo {
+    animation: de-baixo 1s ease-out forwards;
 }
 
-/* Delays para entrada em sequência */
-.delay-1 {
-    animation-delay: 0.3s;
-}
-.delay-2 {
-    animation-delay: 0.6s;
-}
-.delay-3 {
-    animation-delay: 0.9s;
-}
-
-
-
-/*.carrossel-container {
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-    background-color: #e9f0ec;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.carrossel-titulo {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.carrossel {
-    display: flex;
-    gap: 15px;
-    transition: transform 0.5s ease;
-}
-
-.artista-card {
-    min-width: 180px;
-    flex: 0 0 auto;
-    text-align: center;
-}
-
-.artista-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.seta {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    border: none;
-    color: white;
-    font-size: 24px;
-    padding: 8px 12px;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 50%;
-}
-
-.seta-esquerda {
-    left: 10px;
-}
-
-.seta-direita {
-    right: 10px;
-}
-
-.carrossel-wrapper {
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.carrossel-wrapper::-webkit-scrollbar {
-    display: none;
-}
-/*
+/* ease-out é: animação começa rápida e depois desacelera suavemente no final*/
+/* forwards é: mantém o estado final da animação mesmo após ela terminar*/
