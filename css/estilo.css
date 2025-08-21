@@ -35,6 +35,18 @@
 .logoif {
     max-width: 350px;
     min-width: none;
+    margin-left: 20vh;
+}
+
+
+.garfo {
+    transition: transform 0.5s;
+    transform: rotate(45deg);
+}
+
+.faca {
+    transition: transform 0.5s;
+    transform: rotate(-45deg);
 }
 
 @keyframes da-esquerda {
@@ -167,6 +179,26 @@
     }
 }
 
+@keyframes garfo {
+    0%{
+        transform: translateY(-200vh);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    75%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+}
+
 .animate-da-esquerda {
     animation: da-esquerda 2s ease-out forwards;
 }
@@ -192,6 +224,10 @@
 
 .animate-verde {
     animation: verde 1s 2s linear forwards;
+}
+
+.animate-garfo {
+    animation: garfo 2s 2s ease-out backwards;
 }
 /* ease-out é: animação começa rápida e depois desacelera suavemente no final*/
 /* forwards é: mantém o estado final da animação mesmo após ela terminar*/
